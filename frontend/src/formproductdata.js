@@ -8,7 +8,7 @@ export default function FormProductData() {
                 cost:0
         })
         const sumbitForm=(e)=>{
-                axios.post('http://localhost:5000/newProduct',formData)
+                axios.post('http://localhost:5001/newProduct',formData)
         }
   return (
         <Form className="w-50 m-auto" >

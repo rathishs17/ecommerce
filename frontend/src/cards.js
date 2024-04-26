@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 
 function ProCard({ data }) {
   const deleteProduct = (name) => {
-     axios.delete(`http://localhost:5000/deleteProduct/${name}`)
+     axios.delete(`http://localhost:5001/deleteProduct/${name}`)
      .then(()=>{console.log('deleted');})
      .catch(()=>{console.log('Could not delete it');})
   };
@@ -14,7 +14,7 @@ function ProCard({ data }) {
       <Card.Body>
         <Card.Title>{data.name}</Card.Title>
         <div>
-          <Button variant="primary" className="me-4">Add to Cart : {data.cost}</Button>
+          <Button variant="primary" className="me-4">Cost : {data.cost}</Button>
           <Button variant="danger" onClick={() => deleteProduct(data.name)}>
             Delete
           </Button>

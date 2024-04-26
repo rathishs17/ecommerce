@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import CardContainer from "./CardContainer";
 import FormProductData from "./formproductdata";
+import Loginform from "./loginform";
+import Signupform from "./signupform";
 // tag / root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -15,12 +17,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // React fragments sugar form
 root.render(
         <>
+        <Signupform/>
+        <Loginform/>
                 <NavScrollExample />
-                <h1 className="text-center mt-3">Welcome to Skolar store 💪</h1>
+                <h1 className="text-center mt-3">Welcome to Shoe mart  </h1>
                 <hr />
                 <CardContainer/>
                 <FormProductData/>
-                
+                {/* <App/>                 */}
         </>
 
 )

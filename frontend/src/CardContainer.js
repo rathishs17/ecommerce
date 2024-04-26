@@ -6,7 +6,7 @@ function CardContainer() {
         const [product, setProduct] = useState([])
 
         async function fetchdata(){
-                const response =await axios('http://localhost:5000/');
+                const response =await axios('http://localhost:5001/');
                 setProduct(response.data)
         }
         useEffect(fetchdata,[])
